@@ -1,6 +1,6 @@
-# **ECE2112_PA3**
+# **ECE2112_PA4**
 **Jeremy Rafael G. Lacuna | 2ECE-C** <br>
-*This repository contains three programming problems which covers **Module 3 - Pandas**.* <br>
+*This repository contains three programming problems which covers **Module 4 - Data Wrangling and Visualization**.* <br>
 <br>
 **Objectives:**
 1. Filter tabular data using several categorical and numerical conditions;
@@ -206,3 +206,4 @@ To view and test the code:
 **README File Version History:**
 
 ```September 17, 2026``` - README.md output uploaded. <br>
+```September 17, 2026``` - Fixed information error. <br>
