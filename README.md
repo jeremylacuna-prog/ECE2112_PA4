@@ -66,15 +66,15 @@ def vis_female():
     board2 = pd.read_excel('board2.xlsx')
     board2['Average'] = board2[['Math', 'Electronics', 'GEAS', 'Communication']].mean(axis=1)
 
-    VisFemale = board2[(board2['Hometown'] == 'Visayas') & (board2['Gender'] == 'Female')][['Name', 'Track', 'GEAS', 'Electronics', 'Average']]
+    visfemale2 = board2[(board2['Hometown'] == 'Visayas') & (board2['Gender'] == 'Female')][['Name', 'Track', 'GEAS', 'Electronics', 'Average']]
     
-    filtered_VisFemale = VisFemale[VisFemale['Average'] >= 60]
+    VisFemale = visfemale2[visfemale2['Average'] >= 60]
 
-    return VisFemale, filtered_VisFemale
+    return visfemale2, VisFemale
 ```
 #### **Test Cases:**
 ```python
-VisFemale, filtered_VisFemale = vis_female()
+visfemale2, VisFemale = vis_female()
 ```
 ```python
 print("VisFemale DataFrame:\n", VisFemale)
@@ -84,10 +84,8 @@ Output: <br>
 VisFemale DataFrame:
     Name             Track  GEAS  Electronics  Average
 5    S6  Microelectronics    86           45    75.50
-10  S11     Communication    48           56    54.75
 20  S21  Microelectronics    68           51    68.50
 21  S22     Communication    89           39    62.50
-23  S24  Microelectronics    60           45    57.75
 25  S26   Instrumentation    83           47    65.75
 ```
 ## **C. Category-Average Visualization**
@@ -207,3 +205,4 @@ To view and test the code:
 
 ```September 17, 2026``` - README.md output uploaded. <br>
 ```September 17, 2026``` - Fixed information error. <br>
+```September 17, 2026``` - Fixed error in code regarding letter B. <br>
